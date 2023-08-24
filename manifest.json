@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Greenhouse Chrome Extension",
+    "description": "An extension to remove some Greenhouse frustrations",
+    "version": "1.0",
+    "declarative_net_request" : {
+      "rule_resources" : [{
+        "id": "download_ruleset",
+        "enabled": true,
+        "path": "download_ruleset.json"
+      }]
+    },
+    "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestFeedback"
+    ],
+    "host_permissions": [
+      "https://*.greenhouse.io/*",
+      "https://grnhse-use1-prod-s1-ghr.s3.amazonaws.com/*"
+    ]
+}
